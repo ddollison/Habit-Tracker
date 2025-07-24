@@ -1,11 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f2f2f2;
+  color: #333;
+}
+
+.app {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #4caf50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: #e9e9e9;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.habit-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.habit-info span {
+  flex: 1;
+}
+
+.streak {
+  font-weight: bold;
+  color: #4caf50;
+}
+
 .history-row {
   display: flex;
+  justify-content: space-between;
   gap: 4px;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 .history-box {
-  width: 20px;
+  flex: 1;
+  max-width: 20px;
   height: 20px;
   font-size: 12px;
   text-align: center;
